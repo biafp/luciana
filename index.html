@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+
+  <title>Feliz Dia das Mães 💜</title>
+
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Parisienne&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+  <div class="hearts" id="hearts"></div>
+
+  <!-- MÚSICA -->
+
+  <audio id="music" loop>
+
+    <source src="musica.mp3"
+            type="audio/mpeg">
+
+  </audio>
+
+  <button class="music-button"
+          onclick="toggleMusic()">
+
+    ♫
+
+  </button>
+
+  <!-- INÍCIO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+        <h1 class="title">
+        Feliz Dia das Mães
+      </h1>
+
+      <img src="img/mae-principal.jpg"
+           class="main-photo">
+
+      
+
+      <p class="subtitle">
+        Obrigada por ser meu lar ❤️
+      </p>
+
+      <a href="#galeria">
+
+        <button class="btn">
+          Começar
+        </button>
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- GALERIA -->
+
+  <section id="galeria">
+
+    <h2 class="section-title">
+      Nossas Memórias
+    </h2>
+
+    <div class="gallery">
+
+      <img src="img/foto1.jpg">
+
+      <img src="img/foto2.jpg">
+
+      <img src="img/foto3.jpg">
+
+      <img src="img/foto4.jpg">
+
+    </div>
+
+  </section>
+
+  <!-- CARTA -->
+
+  <section>
+
+    <h2 class="section-title">
+      Uma carta pra você 💌
+    </h2>
+
+    <div class="letter">
+
+      <p>
+        Mãe,
+      </p>
+
+      <p>
+        Você é uma daquelas pessoas raras que o mundo ainda não soube reconhecer da forma que merece. E mesmo com todos os defeitos, dificuldades e momentos complicados, nunca passou pela minha cabeça desejar outra mulher no seu lugar. Se eu pudesse escolher mil vezes, ainda escolheria você em todas elas.
+
+A gente pode discordar às vezes, se irritar ou até machucar uma à outra sem querer, mas nada muda o tamanho da admiração que eu sinto por você. Porque ser mãe não é ser perfeita. É continuar tentando, continuar amando, continuar presente mesmo nos dias difíceis. E nisso você nunca falha.
+
+Existe algo em você que é impossível explicar completamente. O jeito que cuida, que percebe quando algo não está bem, que se preocupa até nos menores detalhes… tudo isso faz de você alguém único. E o seu sorriso… ele tem uma paz que vai muito além da aparência. É aquele tipo de sorriso que conforta, acolhe e faz qualquer lugar parecer casa.
+      </p>
+
+      <p>
+        Você é forte de um jeito silencioso, daqueles que sustentam tudo sem precisar mostrar. Aprende com os erros, recomeça quantas vezes for preciso e segue sendo exatamente quem eu preciso ter ao meu lado.
+
+Talvez eu nunca consiga agradecer por tudo o que você fez e ainda faz. Por cada preocupação silenciosa, por cada noite mal dormida, por cada vez que colocou os outros na frente de si mesma sem esperar nada em troca.
+
+Obrigada por cada cuidado, cada esforço escondido, cada abraço nos momentos em que eu nem sabia que precisava. Talvez eu não diga isso tantas vezes quanto deveria, mas tenho muito orgulho de ser sua filha.
+
+E se a vida me desse a chance de escolher outra vez, eu escolheria você. Sempre.
+      </p>
+
+      <p>
+        Eu te amo❤️
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- HOMENAGEM -->
+
+  <section class="memory">
+
+    <h2 class="section-title">
+      Alguns amores nunca vão embora 🕊️
+    </h2>
+
+    <img src="img/montagem.jpg">
+     <img src="img/montagem2.jpg">
+
+    <p class="memory-quote">
+
+      “Alguns amores não vão embora.
+      Apenas aprendem a morar na saudade.
+      Ela continua viva no seu sorriso, no seu cuidado
+      e no amor que você transmite!”
+
+    </p>
+    
+
+  </section>
+
+  <!-- LIÇÕES -->
+
+  <section>
+
+    <h2 class="section-title">
+      Tudo que aprendi com você 🌷
+    </h2>
+
+    <div class="lessons">
+
+      <div class="lesson-card">
+        Aprendi a amar sem medida.
+      </div>
+
+      <div class="lesson-card">
+        Aprendi a ser forte.
+      </div>
+
+      <div class="lesson-card">
+        Aprendi a cuidar de quem amo.
+      </div>
+
+      <div class="lesson-card">
+        Aprendi a nunca desistir.
+      </div>
+
+      <div class="lesson-card">
+        Aprendi a ser grata pelas pequenas coisas.
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FINAL -->
+
+  <section>
+
+    <div class="final-box">
+
+      <h2 class="section-title">
+        Pra quando se sentir sozinha 💌
+      </h2>
+
+      <button class="btn"
+              onclick="showSecret()">
+
+        Abrir mensagens
+
+      </button>
+
+      <div class="secret"
+           id="secret">
+
+        <!-- ÁUDIO 1 -->
+
+        <div class="audio-card">
+
+          <img src="img/irma1.jpg"
+               class="audio-photo">
+
+          <p class="audio-name">
+            ❤️
+          </p>
+
+          <audio controls>
+
+            <source src="audio1.mp3"
+                    type="audio/mpeg">
+
+          </audio>
+
+        </div>
+
+        <!-- ÁUDIO 2 -->
+
+        <div class="audio-card">
+
+          <img src="img/irma2.jpg"
+               class="audio-photo">
+
+          <p class="audio-name">
+            ❤️
+          </p>
+
+          <audio controls>
+
+            <source src="audio2.mp3"
+                    type="audio/mpeg">
+
+          </audio>
+
+        </div>
+
+        <!-- ÁUDIO 3 -->
+
+        <div class="audio-card">
+
+          <img src="img/bianca.jpg"
+               class="audio-photo">
+
+          <p class="audio-name">
+           ❤️
+          </p>
+
+          <audio controls>
+
+            <source src="audio3.mp3"
+                    type="audio/mpeg">
+
+          </audio>
+
+        </div>
+
+         <div class="audio-card">
+
+          <img src="img/emy.jpg"
+               class="audio-photo">
+
+          <p class="audio-name">
+            ❤️
+          </p>
+
+          <audio controls>
+
+            <source src="audio4.mp3"
+                    type="audio/mpeg">
+
+          </audio>
+
+        </div>
+
+        <div class="audio-card">
+
+          <img src="img/bebe.jpg"
+               class="audio-photo">
+
+          <p class="audio-name">
+            ❤️
+          </p>
+
+          <audio controls>
+
+            <source src="audio5.mp3"
+                    type="audio/mpeg">
+
+          </audio>
+
+        </div>
+
+
+
+        <p class="final-message">
+
+          “Você nunca vai estar sozinha.
+          Porque existe um pedacinho seu
+          em cada um de nós.”
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
